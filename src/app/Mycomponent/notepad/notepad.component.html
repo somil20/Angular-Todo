@@ -1,0 +1,9 @@
+<div class="notepad">
+  <h2>Notepad</h2>
+  <form [formGroup]="noteForm" >
+    <textarea formControlName="noteContent" rows="10" placeholder="Type your notes here..."></textarea>
+  </form>
+  <br />
+  <button (click)="saveNote()">Save Note</button>
+  <button (click)="clearNote()">Clear Note</button>
+</div>

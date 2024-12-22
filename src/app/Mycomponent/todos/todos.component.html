@@ -1,0 +1,25 @@
+<div class="container">
+  <app-add-todo (todoAdd)="addTodo($event) "  ></app-add-todo>
+  <div class="row">
+    <!-- Left Column for Add Todo and Todos List -->
+    <div class="col-md-6">
+      
+
+      <h4>Your Todos</h4>
+      <div *ngIf="this.todos.length === 0; else elseBlock">No todos to display</div>
+      <ng-template #elseBlock>
+        <div *ngFor="let todo of todos">
+          <app-todo-item
+            [todo]="todo"
+            (todoDelete)="deleteTodo($event)" (todoCheckbox)="toggleTodo($event)"
+            ></app-todo-item>
+        </div>
+      </ng-template>
+    </div>
+
+    <!-- Right Column for Notepad -->
+    <div class="col-md-4">
+      <app-notepad></app-notepad>
+    </div>
+  </div>
+</div>
