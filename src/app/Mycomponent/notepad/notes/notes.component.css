@@ -1,0 +1,21 @@
+.notes-section {
+    margin-top: 0px;
+  }
+  
+  .notes-section h2 {
+    font-size: 24px;
+  }
+  
+  .notes-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .notes-section li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

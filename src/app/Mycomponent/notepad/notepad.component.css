@@ -1,34 +1,58 @@
 .notepad {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+  width: 150%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between; /* Align items on the left and right */
+}
+
+.notepad-section,
+.saved-notes-section {
+  width: 48%; /* Make each section take up 48% of the width */
+}
+
+textarea {
+  width: 102%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.saved-notes-section {
+  padding-top: 0px;
   
-  textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    padding: 10px 15px;
-    margin-right: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #b34500;
-  }
-  
+}
+
+.saved-notes-section h1 {
+  margin-bottom: 0px;
+}
+
+.saved-notes-section ul {
+  padding-left: 20px;
+}
+
+.saved-notes-section li {
+  margin: 5px 0;
+}
